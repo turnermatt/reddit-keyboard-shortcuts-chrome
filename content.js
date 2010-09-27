@@ -120,6 +120,10 @@
     	jQuery(links[current]).find('form.hide-button a').click();
     	links.splice(current,1);
     	toggleHighlight();
+    },
+    
+    105: function () { // i -- show all images inline
+    	showAllImages();
     }
   };
 

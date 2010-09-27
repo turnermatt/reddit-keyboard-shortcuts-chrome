@@ -5,7 +5,7 @@
   "content_scripts": [
     {
 	  "matches": ["http://www.reddit.com/*"],
-	  "js": ["jquery-1.4.2.js","content.js"]
+	  "js": ["jquery-1.4.2.js","RedditShowAllImages.js","content.js"]
 	}
   ],
   "permissions": [
