@@ -1,0 +1,15 @@
+{
+  "name": "Reddit Keyboard Shortcuts",
+  "version": "1.0",
+  "description": "Keyboard shortcuts for reddit. Lifted primarily from userscript in http://github.com/Anks/gm-scripts",
+  "content_scripts": [
+    {
+	  "matches": ["http://www.reddit.com/*"],
+	  "js": ["jquery-1.4.2.js","content.js"]
+	}
+  ],
+  "permissions": [
+    "http://www.reddit.com/*",
+    "http://www.reddit.com/r/*"
+  ]
+}
