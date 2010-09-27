@@ -20,7 +20,7 @@
      'd — Down-vote current article', '\n',
      '? — Display help'];
 
-  var links = jQuery('#siteTable .thing');
+  var links = jQuery('#siteTable .thing').not('.hidden');
 
   var current = 0;
 
@@ -109,11 +109,17 @@
 
     99: function () { // c -- comments page
       var href = jQuery(links[current]).find('a.comments').attr('href');
-      window.location.href = href;
+      window.open(href);
     },
 
     13: function () { // Enter key -- show current link in the same window
       openCurrentLink(true);
+    },
+    
+    121: function () { // y -- hide
+    	jQuery(links[current]).find('form.hide-button a').click();
+    	links.splice(current,1);
+    	toggleHighlight();
     }
   };
 
