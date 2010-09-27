@@ -2,7 +2,6 @@
 
 (function () {
 	
-	console.log('woo');
 	var jQuery = $;
   if (typeof jQuery == 'undefined') {
     console.log('jQuery not present on page');
@@ -50,8 +49,6 @@
         var position = getElementY(element);
         var height = jQuery(window).height();
         var scrollPosition = window.pageYOffset;
-        
-        console.log("h:"+height+" scrollPosition:"+scrollPosition+" position:"+position+" h+sp-p="+(height+scrollPosition-position));
 
         if ((height + scrollPosition - position) < 10 || (position - scrollPosition) < 10) {
           window.scrollTo(0, position);
