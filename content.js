@@ -17,6 +17,8 @@
      "c â€” Open current article's comments page", '\n',
      'u â€” Up-vote current article', '\n',
      'd â€” Down-vote current article', '\n',
+     'i ,€” Show all image links inline',
+     'y ,€” Hide current article',
      '? â€” Display help'];
 
   var links = jQuery('#siteTable .thing').not('.hidden');
