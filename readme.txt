@@ -8,3 +8,4 @@ TODO:
  - configurable highlight color
  - configurable key combinations
  - insert spacer to push content below right-side content
+ - change yellow highlight to a small arrow next to item number
