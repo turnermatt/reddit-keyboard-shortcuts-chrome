@@ -23,15 +23,13 @@
 
   var current = 0;
 
-  var highlightColor = '#FFB';
-
   var toggleHighlight = function () {
     var currentLink = jQuery(links[current]);
     if (currentLink.hasClass('highlighted')) {
-      jQuery(currentLink).css('background-color', '#FFF');
+      jQuery(currentLink).find('.rank .kbsc-selected-indicator').remove();
       currentLink.removeClass('highlighted');
     } else {
-      jQuery(currentLink).css('background-color', highlightColor);
+      jQuery(currentLink).find('.rank').prepend('<div class="kbsc-selected-indicator" style="float:left; position:absolute; color:black;">&raquo;</div>');
       currentLink.addClass('highlighted');
     }
   };
